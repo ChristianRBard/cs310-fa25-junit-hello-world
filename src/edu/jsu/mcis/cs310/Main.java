@@ -17,7 +17,14 @@ public class Main {
     }
     
     public String reverse(String message) {
-        return message;
+        if (message == null) {
+            return null; // handle null input gracefully
+        }
+        // Use StringBuilder's built-in reverse method
+        return new StringBuilder(message).reverse().toString();
     }
     
+    public String getQuote() {
+        return "A Weapon to Surpass Metal Gear";
+    }
 }
